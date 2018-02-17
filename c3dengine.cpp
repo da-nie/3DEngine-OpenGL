@@ -279,7 +279,8 @@ void C3DEngine::DrawStage(SPortalComponent pc,SCharacter *sCharacter)
   long p2_l2=GetPosition(x2,y2,pc.X,pc.Y,pc.X+pc.VL2_X,pc.Y+pc.VL2_Y);
   if (p1_l1<0 && p2_l1<0 && p1_l2<0 && p2_l2<0) continue;
   if (p1_l1>0 && p2_l1>0 && p1_l2>0 && p2_l2>0) continue;
-  vector_CSegment[segment].DrawSegment(cRenderTexture,cRenderLighting);  
+  vector_CSegment[segment].DrawSegment(cRenderTexture,cRenderLighting);
+  
  } 
  //выведем порталы
  long portal_index=0;
@@ -328,7 +329,6 @@ void C3DEngine::DrawStage(SPortalComponent pc,SCharacter *sCharacter)
   float y1=sy1;
   float x2=sx2;
   float y2=sy2;
-
   //проверим, не стоим ли мы на портале (т.к. возможна ошибка округления и значит глюки)
   //если мы стоим на портале, то ничего не меняется !!!
   long v=GetPosition(sCharacter->X,sCharacter->Y,x1,y1,x2,y2);

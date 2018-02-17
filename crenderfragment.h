@@ -15,6 +15,11 @@ using namespace std;
 class CRenderFragment
 {
  protected:
+  float *NormalArray;
+  float *VertexArray;
+  float *TextureArray;
+  GLint *FaceArray;
+
   bool LightingState[8];//состояние источников света (true - источник включён)
   long List;//номер списка для отрисовки фрагмента
   long Vertex;//число вершин полигона фрагмента
@@ -37,6 +42,8 @@ class CRenderFragment
  public:
   CRenderFragment(void);//конструктор
   ~CRenderFragment(void);//деструктор
+  CRenderFragment(const CRenderFragment& cRenderFragment);//конструктор копий
+  CRenderFragment& operator=(const CRenderFragment& cRenderFragment);//операция присваивания
  public:
   void Draw(void);//нарисовать фрагмент
   void Load(FILE *File);//загрузить фрагмент

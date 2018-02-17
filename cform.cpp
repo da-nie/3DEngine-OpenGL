@@ -71,6 +71,10 @@ void CForm::Create(HWND hWnds,WPARAM wParam,LPARAM lParam)
  glEnable(GL_CULL_FACE);
  glFrontFace(GL_CW);
  glCullFace(GL_BACK);
+ glEnableClientState(GL_NORMAL_ARRAY);
+ glEnableClientState(GL_VERTEX_ARRAY);
+ glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
  //glHint(GL_POLYGON_SMOOTH_HINT,GL_FASTEST);//а на ati не тормозит при NICEST (странно ...)
  //glEnable(GL_POLYGON_SMOOTH);
  glHint(GL_PERSPECTIVE_CORRECTION_HINT,GL_FASTEST);
