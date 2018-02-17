@@ -3,10 +3,11 @@
 
 #include <windows.h>
 #include <GL/gl.h>
-#include <GL/glu.h>
 #include <GL/glext.h>
- 
+#include <GL/glu.h>
+
 #include "formats.h"
+#include "libext.h"
 
 #include <vector>
 using namespace std;
@@ -16,7 +17,7 @@ class CRenderFragment
 {
  protected:
   bool LightingState[8];//состояние источников света (true - источник включён)
-  long List;//номер списка для отрисовки фрагмента
+  GLuint List;//номер списка для отрисовки фрагмента
   long Vertex;//число вершин полигона фрагмента
   //все координаты нужны только для генерации списка
   struct SVertex

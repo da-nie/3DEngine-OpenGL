@@ -156,6 +156,10 @@ SOURCE=.\formats.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\libExt.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\main.cpp
 # End Source File
 # Begin Source File
@@ -229,6 +233,10 @@ SOURCE=.\csimplysector.h
 # Begin Source File
 
 SOURCE=.\formats.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\libExt.h
 # End Source File
 # Begin Source File
 

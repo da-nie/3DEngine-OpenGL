@@ -6,7 +6,7 @@
 --------------------Configuration: Engine - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\WINDOWS\TEMP\RSP241.tmp" with contents
+Creating temporary file "C:\WINDOWS\TEMP\RSP16B.tmp" with contents
 [
 /nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Engine.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
 "E:\From_Visual C++ 6.0\OpenGL\Completion project\Drivers\Engine2015\Engine\c3dengine.cpp"
@@ -27,9 +27,10 @@ Creating temporary file "C:\WINDOWS\TEMP\RSP241.tmp" with contents
 "E:\From_Visual C++ 6.0\OpenGL\Completion project\Drivers\Engine2015\Engine\formats.cpp"
 "E:\From_Visual C++ 6.0\OpenGL\Completion project\Drivers\Engine2015\Engine\main.cpp"
 "E:\From_Visual C++ 6.0\OpenGL\Completion project\Drivers\Engine2015\Engine\mathematic.cpp"
+"E:\From_Visual C++ 6.0\OpenGL\Completion project\Drivers\Engine2015\Engine\libExt.cpp"
 ]
-Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP241.tmp" 
-Creating temporary file "C:\WINDOWS\TEMP\RSP242.tmp" with contents
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP16B.tmp" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP16C.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opengl32.lib glu32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Engine.pdb" /machine:I386 /out:"Release/Engine.exe" 
 ".\Release\c3dengine.obj"
@@ -50,8 +51,9 @@ kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32
 ".\Release\formats.obj"
 ".\Release\main.obj"
 ".\Release\mathematic.obj"
+".\Release\libExt.obj"
 ]
-Creating command line "link.exe @C:\WINDOWS\TEMP\RSP242.tmp"
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP16C.tmp"
 <h3>Output Window</h3>
 Compiling...
 c3dengine.cpp
@@ -72,6 +74,7 @@ csimplysector.cpp
 formats.cpp
 main.cpp
 mathematic.cpp
+libExt.cpp
 Linking...
 
 

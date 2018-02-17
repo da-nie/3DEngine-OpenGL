@@ -61,6 +61,9 @@ void CForm::Create(HWND hWnds,WPARAM wParam,LPARAM lParam)
   DestroyWindow(hWnd);
   return;
  }
+ //инициализируем расширение
+ initExtensions();
+
  cOpenGL.CreateContext(hdc);
  cOpenGL.EnableMakeCurrent(hdc);
  cOpenGL.SetProjectMatrix(WIDTH_SCREEN,HEIGHT_SCREEN,50);

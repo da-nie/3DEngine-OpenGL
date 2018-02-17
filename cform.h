@@ -5,6 +5,7 @@
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <GL/glext.h>
+#include "libext.h"
  
 #include "common.h"
 #include "copengl.h"
